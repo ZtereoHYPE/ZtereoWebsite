@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+    display: flex;
+}
+
+/** mobile phones **/
+@media only screen and (max-width: 640px) {
+    .navBar {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        background-color: cornflowerblue;
+        display: flex;
+    }
+
+    .navButton {
+        height: 100%;
+        justify-content: space-evenly;
+    }
+}
+/** desktop/tablets **/
+@media only screen and (min-width: 640px) {
+    .navBar {
+        width: 80%;
+        height: 50px;
+        border-radius: 15px;
+        background-color: red;
+    }
+}
+
+
+
+/** This goes last because it overwrites white mode elements into dark mode **/
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
