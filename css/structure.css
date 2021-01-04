@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    :root {
+        --scale: 0.7;
+    }
+    .navBar {
+        overflow-x: auto;        
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    body {
+        margin:0;
+    }
+
+    :root {
+        --scale: 1;
+    }
+}
+
+/**@media only screen and (min-width: 1024px) {
+    :root {
+        --scale:1.2;
+    }
+}**/
+
+.navBar {
+    width: 100%;
+    display: flex;
+}
+
+.navBar::-webkit-scrollbar {
+    display:none
+}
+
+.navButton {
+    padding: 5px;
+    height: calc(50px * var(--scale));
+    border-radius: 7px;
+    margin: 5px;
+    font-size: calc(15px * var(--scale));
+}
