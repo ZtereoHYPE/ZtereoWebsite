@@ -10,6 +10,7 @@ body {
     :root {
         --scale: 0.7;
         --navBarMargin: 10px;
+        --flex-direction: column;
     }
     .navBar {
         overflow-x: auto;        
@@ -20,7 +21,8 @@ body {
 @media only screen and (min-width: 668px) {
     :root {
         --scale: 1;
-        --navBarMargin: 0;
+        --navBarMargin: 0px;
+        --flex-direction: row;
     }
 }
 
@@ -35,10 +37,8 @@ body {
     display: flex;
     margin: var(--navBarMargin);
     align-items: center;
-}
-
-.navBar::-webkit-scrollbar {
-    display:none
+    position: fixed;
+    z-index: 99;
 }
 
 .navButton {
@@ -101,6 +101,7 @@ body {
 .firstTitle {
     font-size: calc(70px * var(--scale));
     margin-bottom: 0;
+    margin-top: calc(var(--scale)*100px);
 }
 
 .secondTitle {
@@ -108,6 +109,40 @@ body {
     margin-top: 10px;
 }
 
-.contentDiv {
+.firstContentDiv {
+    display: flex;
+    flex-direction: var(--flex-direction);
+    padding: 20px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%)
+}
+
+.secondContentDiv {
+    display: flex;
+    flex-direction: var(--flex-direction);
+    padding: 20px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%)
+}
+
+.largeBubble {
+    flex-grow: 2;
+}
+
+.contentTitle {
+    margin: 0;
+    font-size: 35px
+}
+
+.contentText {
+    font-size: 20px
+}
+
+.footerText {
+    padding: 10px;
+    font-size: 12px;
+    margin:0;
     height: 1000px;
 }
