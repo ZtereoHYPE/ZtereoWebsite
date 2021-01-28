@@ -4,14 +4,14 @@
     :root {
         --text-primary: #111111;
         --text-secondary: #3B3B3B;
-        --background: #DADADA;
+        --background: #e2e2e2;
         --background2: ;
         --navColor: #F9F9F9;
         --accentColor: rgb(0, 49, 139);
-        --elementColor1:
-        --elementColor2:
-        --elementColor3:
-        /**--shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px 0px;**/
+        --shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px 0px;
+    }
+    .firstContentDiv {
+        background-image: url("/images/background_light.png");
     }
 }
 
@@ -23,14 +23,15 @@
         --background2: #2b2b2b;
         --navColor: #363636;
         --accentColor: lightblue;
-        --elementColor1:
-        --elementColor2:
-        --elementColor3:
-        /**--shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px 0px;**/
+        --shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px 0px;
+    }
+    .firstContentDiv {
+        background-image: url("/images/background_dark.png");
     }
 }
 .navBar {
     background-color: var(--navColor);
+    box-shadow: var(--shadow);
 }
 body {
     background-color: var(--background);
@@ -83,9 +84,10 @@ body {
     color: var(--text-primary);
 }
 .firstContentDiv {
+    background-color: var(--background2);
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%m;
-    background-image: url(https://images.unsplash.com/photo-1567446042105-d18dc59d4677?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+    background-size: cover;
 }
 .secondContentDiv {
     /* background-color: var(--background); */

@@ -57,7 +57,6 @@ body {
     position: absolute;
     right: calc(5px + var(--navBarMargin));
     display: none;
-    
 }
 
 @media only screen and (max-width: 375px) {
@@ -115,7 +114,7 @@ body {
     padding: 20px;
     padding-top: 10vw;
     padding-bottom: 10vw;
-    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%)
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
 }
 
 .secondContentDiv {
@@ -124,7 +123,7 @@ body {
     padding: 20px;
     padding-top: 10vw;
     padding-bottom: 10vw;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%)
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
 }
 
 .largeBubble {
@@ -144,5 +143,4 @@ body {
     padding: 10px;
     font-size: 12px;
     margin:0;
-    height: 1000px;
 }

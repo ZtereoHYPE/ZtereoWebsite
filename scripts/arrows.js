@@ -1,4 +1,8 @@
-document.getElementsByClassName('') window.onscroll()
+document.getElementsByClassName('navBar').addEventListener('scroll', function() {
+    if (isScrolledIntoView(document.getElementById('arrows'))) {
+        alert('begone')
+    }
+})
 
 
 
