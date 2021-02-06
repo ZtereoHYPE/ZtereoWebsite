@@ -10,7 +10,6 @@ body {
     :root {
         --scale: 0.7;
         --navBarMargin: 10px;
-        --flex-direction: column;
     }
     .navBar {
         overflow-x: auto;        
@@ -22,7 +21,6 @@ body {
     :root {
         --scale: 1;
         --navBarMargin: 0px;
-        --flex-direction: row;
     }
 }
 
@@ -110,7 +108,7 @@ body {
 
 .firstContentDiv {
     display: flex;
-    flex-direction: var(--flex-direction);
+    flex-direction: column;
     padding: 20px;
     padding-top: 10vw;
     padding-bottom: 10vw;
@@ -119,7 +117,7 @@ body {
 
 .secondContentDiv {
     display: flex;
-    flex-direction: var(--flex-direction);
+    flex-direction: column;
     padding: 20px;
     padding-top: 10vw;
     padding-bottom: 10vw;
@@ -133,6 +131,7 @@ body {
 .contentTitle {
     margin: 0;
     font-size: 35px
+    
 }
 
 .contentText {
