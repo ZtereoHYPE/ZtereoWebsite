@@ -10,11 +10,18 @@ body {
     :root {
         --scale: 0.7;
         --navBarMargin: 10px;
-        --contentPadding: 10vw;
+        --contentPadding: 12vw;
     }
     .navBar {
         overflow-x: auto;  
         border-radius: 12px;
+    }
+    .firstContentDiv {
+        clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%)
+    }
+    
+    .secondContentDiv {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%)
     }
 }
 
@@ -22,15 +29,16 @@ body {
     :root {
         --scale: 1;
         --navBarMargin: 0px;
-        --contentPadding: 7vw;
+        --contentPadding: 6vw;
+    }
+    .firstContentDiv {
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
+    }
+
+    .secondContentDiv {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
     }
 }
-
-/**@media only screen and (min-width: 1024px) {
-    :root {
-        --scale:1.2;
-    }
-}**/
 
 .navBar {
     width: calc(100% - 2*var(--navBarMargin));
@@ -46,7 +54,7 @@ body {
     height: calc(50px * var(--scale));
     border-radius: 7px;
     margin: 5px;
-    font-size: 15px;
+    font-size: calc(15px * var(--scale));
     white-space: nowrap;
     text-align: center;
 }
@@ -101,7 +109,6 @@ body {
     padding: 20px;
     padding-top: var(--contentPadding);
     padding-bottom: var(--contentPadding);
-    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
 }
 
 .secondContentDiv {
@@ -110,7 +117,6 @@ body {
     padding: 20px;
     padding-top: var(--contentPadding);
     padding-bottom: var(--contentPadding);
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
 }
 
 .largeBubble {
@@ -125,9 +131,11 @@ body {
 .contentText {
     font-size: 20px
 }
-
+.footer {
+    margin-top: 20px;
+}
 .footerText {
-    padding: 10px;
+    padding: 5px;
     font-size: 12px;
     margin:0;
 }
