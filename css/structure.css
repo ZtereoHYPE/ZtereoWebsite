@@ -10,10 +10,13 @@ body {
     :root {
         --scale: 0.7;
         --navBarMargin: 10px;
+        --contentPadding: 10vw;
     }
     .navBar {
-        overflow-x: auto;        
-        border-radius: 10px;
+        overflow-x: auto;  
+        border-radius: 12px;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
 }
 
@@ -21,6 +24,7 @@ body {
     :root {
         --scale: 1;
         --navBarMargin: 0px;
+        --contentPadding: 7vw;
     }
 }
 
@@ -44,24 +48,11 @@ body {
     height: calc(50px * var(--scale));
     border-radius: 7px;
     margin: 5px;
-    font-size: calc(15px * var(--scale));
+    font-size: 15px;
     white-space: nowrap;
     text-align: center;
 }
 
-.indicatorArrows {
-    height: 20px;
-    z-index: 5;
-    position: absolute;
-    right: calc(5px + var(--navBarMargin));
-    display: none;
-}
-
-@media only screen and (max-width: 375px) {
-    .indicatorArrows {
-        display: initial;
-    }
-}
 .logoDiv {
     display: flex;
     align-items: center;
@@ -70,7 +61,7 @@ body {
 }
 
 .logoImage {
-    height: calc(40px * var(--scale));
+    height: 40px;
     width: auto;
     border-radius: 100%;
     margin-right: 5px;
@@ -79,7 +70,7 @@ body {
 .logoText {
     display: flex;
     flex-direction: column;
-    font-size: calc(15px * var(--scale)); 
+    font-size: 15px; 
 }
 
 .logoTextTop {
@@ -110,8 +101,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-top: var(--contentPadding);
+    padding-bottom: var(--contentPadding);
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
 }
 
@@ -119,8 +110,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-top: var(--contentPadding);
+    padding-bottom: var(--contentPadding);
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
 }
 
