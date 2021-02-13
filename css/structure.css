@@ -15,8 +15,6 @@ body {
     .navBar {
         overflow-x: auto;  
         border-radius: 12px;
-        padding-top: 4px;
-        padding-bottom: 4px;
     }
 }
 
@@ -61,7 +59,7 @@ body {
 }
 
 .logoImage {
-    height: 40px;
+    height: calc(40px * var(--scale));
     width: auto;
     border-radius: 100%;
     margin-right: 5px;
@@ -70,7 +68,7 @@ body {
 .logoText {
     display: flex;
     flex-direction: column;
-    font-size: 15px; 
+    font-size: calc(15px * var(--scale)); 
 }
 
 .logoTextTop {
@@ -121,8 +119,7 @@ body {
 
 .contentTitle {
     margin: 0;
-    font-size: 35px
-    
+    font-size: 35px 
 }
 
 .contentText {
