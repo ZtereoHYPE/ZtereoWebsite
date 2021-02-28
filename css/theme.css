@@ -6,20 +6,10 @@
         --text-primary: #111111;
         --text-secondary: #3B3B3B;
         --background: #edf2f7;
-        --background2: #e0e0e0;
+        --background2: #a8a8a8;
         --navColor: #ffffff;
-        --accentColor: #75102e;  
-    }
-    .firstContentDiv {
-        background-image: url("../images/background_light.png");
-        background-image: url("../images/background_2_electric_boogaloo_light.jpg");
-        background-image: url("../images/light.jpg");
-    }
-
-    .secondContentDiv {
-        background-image: url("../images/background_light.png");
-        background-image: url("../images/background_2_electric_boogaloo_light.jpg");
-        background-image: url("../images/light.jpg");
+        --accentColor: rgb(112, 169, 189);
+        --background-image: url("../images/light.jpg");
     }
 }
 
@@ -31,16 +21,7 @@
         --background2: #2b2b2b;
         --navColor: #363636;
         --accentColor: #add8e6;
-    }
-    .firstContentDiv {
-        background-image: url("../images/background_dark.png");
-        background-image: url("../images/background_2_electric_boogaloo_dark.jpg");
-        background-image: url("../images/dark.jpg");
-    }
-
-    .secondContentDiv {
-        background-image: url("../images/background_dark.png");
-        background-image: url("../images/dark.jpg");
+        --background-image: url("../images/dark.jpg");
     }
 }
 .navBar {
@@ -71,7 +52,7 @@ body {
     color: var(--accentColor);
 }
 .firstTitle {
-    background: linear-gradient(180deg,#FF0000,#FF7F00,#FFFF00,#00FF00, #01b872,#0000FF,#8B00FF,#FF0000);
+    background: linear-gradient(180deg,#FF0000,#FF7F00,#FFFF00,#00e93a, #01b872,#0000FF,#8B00FF,#FF0000);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -98,29 +79,45 @@ body {
     color: var(--text-primary);
 }
 .firstContentDiv {
-    background-color: var(--background2);
+    color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    background-image: var(--background-image);
 }
 .secondContentDiv {
-    background-color: var(--background2);
+    color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     text-align: right;
-    /* background-color: blue; */
+    background-image: var(--background-image);
 }
 .contentTitle {
     color: var(--accentColor);
     font-family: 'Nunito', sans-serif;
 }
-.contentText {
-    color: var(--text-primary);
-}
 .footer {
     font-family: 'Nunito', sans-serif;
     color: var(--text-secondary);
+}
+.contentBox {
+    color: var(--text-primary);
+}
+.accentColour {
+    color: var(--accentColor);
+}
+.subtitle {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-primary);
+}
+.section {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--background2);
+    border-radius: 15px;
 }

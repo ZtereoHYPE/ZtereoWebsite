@@ -19,9 +19,11 @@ body {
     .firstContentDiv {
         clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%)
     }
-    
     .secondContentDiv {
         clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%)
+    }
+    .contentBox {
+        flex-wrap: wrap;
     }
 }
 
@@ -34,7 +36,6 @@ body {
     .firstContentDiv {
         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
     }
-
     .secondContentDiv {
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
     }
@@ -90,12 +91,12 @@ body {
 .titleDiv {
     padding: 20px;
     text-align: center;
+    padding-top: calc(var(--scale)*100px);
 }
 
 .firstTitle {
     font-size: calc(70px * var(--scale));
     margin-bottom: 0;
-    margin-top: calc(var(--scale)*100px);
 }
 
 .secondTitle {
@@ -125,11 +126,10 @@ body {
 
 .contentTitle {
     margin: 0;
-    font-size: 35px 
+    font-size: 35px; 
 }
-
 .contentText {
-    font-size: 20px
+    font-size: 20px;
 }
 .footer {
     margin-top: 20px;
@@ -141,4 +141,74 @@ body {
     padding: 2px;
     font-size: calc(12px*var(--scale));
     margin: 0;
+}
+.subtitle {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: calc(100px * var(--scale));
+    font-size: calc(50px * var(--scale));
+    text-align: center;
+    margin: 0;
+}
+.section {
+    margin-top: 0;
+    width: 420px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    text-decoration: transparent;
+}
+.contentBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 668px) {
+    .contentBox {
+        flex-wrap: wrap;
+    }
+    .section {
+        width: 600px;
+    }
+}
+.ZtereoBOT {
+    background-image: url(https://cdn.discordapp.com/avatars/713718980325539910/01c36f6ac37309befb7b442299f62a19.png?size=2048);
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+.WaffleBOT {
+    background-image: url("../images/WaffleBOT.jpg");
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+.ZtereoWEBSITE {
+    background-image: url("../images/ZtereoWEBSITE.jpg");
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+.McShaders {
+    background-image: url("../images/mcshader.png");
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+.McMod {
+    background-image: url("../images/pastel_wonderland.png");
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+.electron {
+    background-image: url("../images/electron.jpg");
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+}
+.link {
+    color: var(--text-primary);
+    text-decoration-color: var(--text-primary);
 }
