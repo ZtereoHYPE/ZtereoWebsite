@@ -9,7 +9,7 @@
         --background2: #a8a8a8;
         --navColor: #ffffff;
         --accentColor: rgb(112, 169, 189);
-        --background-image: url("../images/light.jpg");
+        --background-image: url("./images/light.jpg");
     }
 }
 
@@ -21,7 +21,7 @@
         --background2: #2b2b2b;
         --navColor: #363636;
         --accentColor: #add8e6;
-        --background-image: url("../images/dark.jpg");
+        --background-image: url("./images/dark.jpg");
     }
 }
 .navBar {
