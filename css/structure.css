@@ -179,25 +179,25 @@ body {
     background-blend-mode: soft-light;
 }
 .WaffleBOT {
-    background-image: url("../images/WaffleBOT.jpg");
+    background-image: url("../images/WaffleBOT.webp");
     background-size: cover;
     background-attachment: local;
     background-blend-mode: soft-light;
 }
 .ZtereoWEBSITE {
-    background-image: url("../images/ZtereoWEBSITE.jpg");
+    background-image: url("../images/ZtereoWEBSITE.webp");
     background-size: cover;
     background-attachment: local;
     background-blend-mode: soft-light;
 }
 .McShaders {
-    background-image: url("../images/mcshader.png");
+    background-image: url("../images/mcshader.webp");
     background-size: cover;
     background-attachment: local;
     background-blend-mode: soft-light;
 }
 .McMod {
-    background-image: url("../images/pastel_wonderland.png");
+    background-image: url("../images/pastel_wonderland.webp");
     background-size: cover;
     background-attachment: local;
     background-blend-mode: soft-light;
